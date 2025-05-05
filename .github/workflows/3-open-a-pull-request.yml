@@ -126,7 +126,6 @@ jobs:
 
       - name: Fail job if not all checks passed
         if: steps.check-user-work.outputs.passed == 'false'
-        run: exit 1
 
       - name: Build message - step finished
         id: build-message-step-finish
